@@ -510,3 +510,35 @@ form .submit-btn{
 form .submit-btn:hover{
     transform: scale(1.1) translate3d(8px, 0px, 0px);
 }
+
+.footer{
+    padding: 20px 14%;
+    background: transparent;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.copyright{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ann-color);
+}
+
+.scroll-top i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
+    color: var(--bg-color);
+    border-radius: 1.7rem;
+    font-size: 22px;
+}
+
+
+
+
