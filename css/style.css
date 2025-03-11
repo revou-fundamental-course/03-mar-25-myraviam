@@ -251,3 +251,88 @@ header.sticky{
     color: var(--ann-color);
     margin-bottom: 35px;
 }
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+.services-left h2{
+    margin: 22px 0;
+    font-size: var(--h2-font);
+}
+
+.services-left h2 span{
+    background: -webkit-linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-left p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 33px;
+    color: var(--ann-color);
+    margin-bottom: 35px;
+}
+
+.services-right{
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(400px, auto));
+    align-items: center;
+    gap: 2rem;
+}
+
+.box{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 60px;
+    background: var(--second-bg-color);
+    border-radius: 0.5rem;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
+    border-image-slice: 1;
+    transition: all .7s ease;
+    cursor: pointer;
+}
+
+.box-icon i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
+    color: var(--bg-color);
+    border-radius: 1.7rem;
+    font-size: 22px;
+    transition: all .6s ease;
+}
+
+.box-icon i:hover{
+    transform: scale(1.1) translate3d(9px, 0px, 0px);
+}
+
+.box-text h5{
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.box-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 33px;
+    color: var(--ann-color);
+}
+
+.box:hover{
+    transform: translateY(-7px);
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(135deg, var(--main-color) 0%, #FFF4EA 100%);
+    border-image-slice: 1;
+}
