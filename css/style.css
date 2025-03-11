@@ -12,14 +12,14 @@
     --bg-color: #121212;
     --second-bg-color: #202020;
     --text-color: #ffffff;
-    --main-color: #4F959D;
+    --main-color: #FADFA1;
     --other-color: #8b8a91;
     --alt-color: #4b4b51;
     --ann-color: #c7c6d3;
 
-    --h1-font: 4rem;
+    --h1-font: 6rem;
     --h2-font: 3.8rem;
-    --p-font: 1.1rem;
+    --p-font: 1rem;
 }
 
 body{
@@ -41,7 +41,7 @@ header{
 }
 
 .logo img{
-    max-width: 80px;
+    max-width: 60px;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -49,7 +49,7 @@ header{
 
 .menulist a{
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     color: var(--other-color);
     margin: 0 30px;
@@ -72,15 +72,15 @@ header{
 .menu-btn{
     display: inline-block;
     padding: 15px 25px;
-    background: linear-gradient(135deg, #F6F8D5 0%, var(--main-color) 100%);
+    background: linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
     color: var(--bg-color);
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
     border-radius: 13px;
 }
 
 .menu-btn:hover{
-    background: linear-gradient(135deg, var(--main-color) 0%, #F6F8D5 100%);
+    background: linear-gradient(135deg, var(--main-color) 0%, #FFF4EA 100%);
 }
 
 #menu-icon{
@@ -107,7 +107,7 @@ section{
 }
 
 .home-text{
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .h-line{
@@ -132,26 +132,26 @@ section{
 }
 
 .home-text h1 span{
-    background: -webkit-linear-gradient(135deg, #F6F8D5 0%, var(--main-color) 100%);
+    background: -webkit-linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
     -webkit-background-clip: text; background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.home-texth4{
-    font-size: 22px;
+.home-text h4{
+    font-size: 18px;
     font-weight: 500;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .social-icons a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     background: transparent;
     border: 1px solid var(--alt-color);
-    border-radius: 1.7rem;
+    border-radius: 1rem;
     color: var(--ann-color);
     font-size: 18px;
     margin-right: 12px;
@@ -171,7 +171,7 @@ section{
 
 .btn1{
     display: inline-block;
-    padding: 18px 35px;
+    padding: 15px 30px;
     background: transparent;
     border: 1px solid var(--alt-color);
     color: var(--text-color);
@@ -188,8 +188,8 @@ section{
 
 .btn2{
     display: inline-block;
-    padding: 18px 35px;
-    background: linear-gradient(135deg, #F6F8D5 0%, var(--main-color) 100%);
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
     color: var(--bg-color);
     font-size: 18px;
     font-weight: 500;
@@ -199,4 +199,55 @@ section{
 
 .btn2:hover{
     transform: scale(1.07);
+}
+
+header.sticky{
+    padding: 5px 14%;
+    background: transparent;
+    backdrop-filter: blur(25px);
+}
+
+.about{
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.about-img img{
+    width: 100%;
+    height: 500px;
+    max-width: 325px;
+    border-radius: 20%;
+    object-fit: cover;
+    background: -webkit-linear-gradient(135deg, var(--main-color) 0%, #FFF4EA 100%);
+    border: 3px solid var(--main-color);
+}
+
+.about-text h2{
+    margin: 22px 0;
+    font-size: var(--h2-font);
+}
+
+.about-text h2 span{
+    background: -webkit-linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text h5{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.about-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 33px;
+    color: var(--ann-color);
+    margin-bottom: 35px;
 }
