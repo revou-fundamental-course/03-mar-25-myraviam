@@ -256,7 +256,7 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .services-left h2{
@@ -291,7 +291,7 @@ header.sticky{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 30px 60px;
+    padding: 15px 30px;
     background: var(--second-bg-color);
     border-radius: 0.5rem;
     border-bottom: 2px solid transparent;
@@ -357,7 +357,7 @@ header.sticky{
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     align-items: center;
     gap: 2rem;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }
 
 .row-img{
@@ -395,12 +395,12 @@ header.sticky{
 }
 
 .row-left h3{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 8px;
 }
 
 .row-left h6{
-    font-size: 14px;
+    font-size: 12px;
     color: var(--ann-color);
 }
 
@@ -481,7 +481,7 @@ header.sticky{
 .contact-form input,.contact-form textarea{
     border: none;
     outline: none;
-    padding: 17px;
+    padding: 15px;
     font-size: 0.9rem;
     background: var(--second-bg-color);
     color: var(--text-color);
@@ -496,7 +496,7 @@ form textarea::placeholder{
 
 form .submit-btn{
     display: inline-block;
-    padding: 18px 25px;
+    padding: 15px 20px;
     background: linear-gradient(135deg, #FFF4EA 0%, var(--main-color) 100%);
     color: var(--bg-color);
     font-size: 17px;
@@ -538,6 +538,164 @@ form .submit-btn:hover{
     border-radius: 1.7rem;
     font-size: 22px;
 }
+
+@media(max-width: 1580px){
+    header{
+        padding: 15px 6%;
+    }
+    header.sticky{
+        padding: 3px 6%;
+    }
+    section{
+        padding: 100px 6% 80px;
+    }
+    .footer{
+        padding: 15px 6%;
+    }
+}
+
+@media(max-width: 1380px){
+    header{
+        padding: 15px 3%;
+    }
+    header.sticky{
+        padding: 3px 3%;
+    }
+    section{
+        padding: 100px 3% 80px;
+    }
+    .footer{
+        padding: 15px 3%;
+    }
+    :root{
+        --h1-font: 4.5rem;
+        --h2-font: 3rem;
+        --p-font: 1rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .about{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-img{
+        text-align: center;
+    }
+    .about-img img{
+        text-align: center;
+        width: 100%;
+        width: 100%;
+        height: 580px;
+        max-width: 455px;
+        border-radius: 20%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    .services{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .services-right{
+        grid-template-columns: repeat (auto-fit, minmax(300px, auto));
+        width: 100%;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .contact-form{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1000px){
+    .logo img{
+        max-width: 50px;
+    }
+    .menulist a{
+        margin: 0 20px;
+        font-size: 17px;
+    }
+    .menu-btn{
+        padding: 14px 22px;
+        font-size: 15px;
+    }
+    .btn1{
+        padding: 14px 22px;
+        font-size: 15px;
+    }
+    .btn2{
+        padding: 14px 22px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 900px){
+    :root{
+        --h1-font: 4rem;
+        --h2-font: 2.8rem;
+    }
+}
+
+@media(max-width: 800px){
+    #menu-icon{
+        display: block;
+    }
+    .menulist{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 70px 50px;
+        top: 0;
+        right: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        transition: all .6s ease-in-out;
+    }
+    .menulist a{
+        display: block;
+        padding: 0;
+        margin: 0px 0px 25px 0px;
+        font-size: 1.7rem;
+    }
+    .menulist.open{
+        left: 0;
+    }
+}
+
+@media(max-width: 590px){
+    :root{
+        --h1-font: 3.4rem;
+        --h2-font: 2.5rem;
+    }
+    .about-img img{
+        text-align: center;
+        width: 100%;
+        width: 100%;
+        height: 450px;
+        max-width: 380px;
+        border-radius: 20%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    form .submit-btn{
+        padding: 13px 27px;
+        width: 40%;
+        font-size: 13px;
+    }
+}
+
+  
 
 
 
