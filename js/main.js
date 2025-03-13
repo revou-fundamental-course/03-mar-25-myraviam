@@ -224,3 +224,5 @@ slides.forEach((slide, i) => {
         videoClose(i);
     });
 });
+
+// DONE.
