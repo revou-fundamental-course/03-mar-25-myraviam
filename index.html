@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Ravi</title>
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -27,14 +29,101 @@
             <a href="#contact">Contact</a>
         </ul>
 
-        <div class="menu-right">
+        <!-- <div class="menu-right">
             <a href="#contact" class="menu-btn">
                 <span>Let's Talk</span>
                 <i class="ri-message-3-line"></i>
             </a>
             <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
+        </div> -->
     </header>
+
+<!-- Responsive Full-Screen Image Slider -->
+    <section class="main-section">
+        <!-- <a href="" class="logo">Animals.</a> -->
+<!-- Slider -->
+        <div class="slider">
+<!-- Slider Start -->
+            <div class="slide first-slide">
+                <div class="slide-images">
+                    <img src="/img/bg-1.jpg" alt="" class="slide-bg-img">
+                    <h1 class="animal-name">Red Fox</h1>
+                    <img src="/img/animal-1.png" alt="" class="slide-animal-img">
+                </div>
+                <div class="slide-text-content">
+                    <h3 class="slide-caption">Wildlife Nature</h3>
+                    <p class="slide-paragraph">Rubah merah (Vulpes vulpes) adalah spesies rubah yang paling luas penyebarannya dan dikenal karena bulunya yang khas berwarna merah-oranye, ekor lebat, serta kecerdikannya. Mereka dapat ditemukan di berbagai habitat, mulai dari hutan, padang rumput, hingga daerah perkotaan. Sebagai hewan yang lincah dan oportunis, rubah merah memiliki kemampuan berburu yang tajam serta pola makan yang fleksibel, mencakup mamalia kecil, burung, buah-buahan, dan serangga.<span class="paragraph-anchor-tag"><a href="" class="read-more">Read More</a></span></p>
+                    <button class="watch-video-btn">Watch Video</button>
+                </div>
+                <div class="slide-video-modal">
+                    <i class="ri-close-line video-close-btn"></i>
+                    <div class="video-modal-content">
+                        <div class="video-card">
+                           <video src="/img/animal-video-1.mp4" class="animal-video" controls autoplay loop></video> 
+                           <p class="video-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis nam tempora necessitatibus debitis sed incidunt ab repellat repudiandae corporis. Libero est minima consectetur illum sit autem, suscipit quo cum enim facilis placeat omnis ullam iure animi ex eum. Est aspernatur nam recusandae? Minus qui accusamus cupiditate dolorum neque vel? <span class="video-anchor-tag"><a href="#" class="read-more">Read More</a></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-images">
+                    <img src="/img/bg-2.jpg" alt="" class="slide-bg-img">
+                    <h1 class="animal-name">Parrots</h1>
+                    <img src="/img/animal-2.png" alt="" class="slide-animal-img">
+                </div>
+                <div class="slide-text-content">
+                    <h3 class="slide-caption">Wildlife Nature</h3>
+                    <p class="slide-paragraph">Burung beo (parrots) adalah burung berwarna-warni yang dikenal karena kecerdasannya, kemampuan meniru suara, dan paruhnya yang kuat. Mereka termasuk dalam famili Psittacidae dan tersebar di berbagai habitat tropis di seluruh dunia. Dengan bulu cerah yang mencolok, seperti hijau, merah, biru, dan kuning, burung beo sering menjadi hewan peliharaan yang populer.<span class="paragraph-anchor-tag"><a href="" class="read-more">Read More</a></span></p>
+                    <button class="watch-video-btn">Watch Video</button>
+                </div>
+                <div class="slide-video-modal">
+                    <i class="ri-close-line video-close-btn"></i>
+                    <div class="video-modal-content">
+                        <div class="video-card">
+                           <video src="/img/animal-video-2.mp4" class="animal-video" controls autoplay loop></video> 
+                           <p class="video-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis nam tempora necessitatibus debitis sed incidunt ab repellat repudiandae corporis. Libero est minima consectetur illum sit autem, suscipit quo cum enim facilis placeat omnis ullam iure animi ex eum. Est aspernatur nam recusandae? Minus qui accusamus cupiditate dolorum neque vel? <span class="video-anchor-tag"><a href="#" class="read-more">Read More</a></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Slide End -->
+        </div>
+<!-- Social Media Links -->
+        <div class="slider-media-icons">
+            <a href="#" class="media-links"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="media-links"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="media-links"><i class="ri-linkedin-line"></i></a>
+        </div>
+<!-- Slider left/right arrow nav -->
+        <div class="slider-navigation">
+            <div class="prev-btn"><i class="ri-arrow-left-s-line"></i>Prev</div>
+            <div class="next-btn">Next<i class="ri-arrow-right-s-line"></i></div>
+        </div>
+<!-- Slider pagination buttons  for each slide -->
+        <div class="slide-pagination">
+            <div class="slide-btn first-slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+            <div class="slide-btn"></div>
+        </div>
+<!-- Slide visibility indicator bars -->
+        <div class="slide-indicator-bars">
+            <div class="indicator-bar first-indicator-bar"></div>
+            <div class="indicator-bar"></div>
+            <div class="indicator-bar"></div>
+            <div class="indicator-bar"></div>
+            <div class="indicator-bar"></div>
+            <div class="indicator-bar"></div>
+            <div class="indicator-bar"></div>
+            <div class="indicator-bar"></div>
+            <div class="indicator-bar"></div>
+        </div>
+    </section>
 
     <section class="home" id="home">
         <div class="home-text">
@@ -296,6 +385,8 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="js/script.js"></script>
+
+    <script src="/js/main.js"></script>
 
 </body>
 </html>
